@@ -6,7 +6,7 @@ public class Main {
         var mapped = Arrays.stream(intArray).map(f -> f * 2);
 
         var copy = Arrays.copyOfRange(intArray, 2, 5);
-        Arrays.stream(copy).forEach(e -> System.out.println(e));
-        mapped.forEach(m -> System.out.println(m));
+        Arrays.stream(copy).forEach(System.out::println);
+        mapped.forEach(System.out::println);
     }
 }
